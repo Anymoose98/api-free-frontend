@@ -1,8 +1,13 @@
 <script>
+import AppCard from './AppCard.vue'
 import axios from 'axios';
 
 export default {
     name: 'Main',
+
+    components:{
+        AppCard,
+    },
     data() {
         return {
             resultIndex: [],
@@ -14,6 +19,7 @@ export default {
         this.chiamata();
     },
     methods: {
+        // filtra la data in modo da avere solo ciò che ci interessa
         soloData(dato) {
             return dato.substring(0, 10);
         },
@@ -47,6 +53,10 @@ export default {
                         <a href="">
                             <h4> {{ this.resultIndex[1].title }}</h4>
                         </a>
+                        <p> {{ this.resultIndex[1].content }}</p>
+                    </div>
+                    <div class="col-6">
+                        <AppCard v-for="post, index in this.resultIndex" :key="index" :post=post />
                     </div>
                 </div>
             </div>
@@ -61,10 +71,13 @@ export default {
 <style scoped>
 main {
     margin-top: 30px;
+    margin-bottom: 30px;
+
 }
 
 .img-principale {
-    height: 500px;
+    width: 100%;
+
 }
 
 strong {
@@ -79,5 +92,8 @@ a {
         color: #5E17EB;
         font-weight: 600;
     }
+}
+p{
+    font-size: large;
 }
 </style>
