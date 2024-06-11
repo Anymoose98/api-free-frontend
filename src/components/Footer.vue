@@ -50,8 +50,8 @@ footer {
     color: white;
 }
 ul {
-  list-style: none; /* Rimuove i bullet points */
-  padding: 0; /* Rimuove il padding predefinito */
-  margin: 0; /* Rimuove il margine predefinito */
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
 }
 </style>

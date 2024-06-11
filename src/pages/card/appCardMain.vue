@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'AppCard',
+    name: 'appCardMain',
 
     props: {
         post: Object

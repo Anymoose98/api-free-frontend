@@ -1,12 +1,12 @@
 <script>
-import AppCard from './AppCard.vue'
+import appCardMain from './card/appCardMain.vue'
 import axios from 'axios';
 
 export default {
     name: 'Main',
 
     components:{
-        AppCard,
+        appCardMain,
     },
     data() {
         return {
@@ -56,7 +56,7 @@ export default {
                         <p> {{ this.resultIndex[1].content }}</p>
                     </div>
                     <div class="col-6">
-                        <AppCard v-for="post, index in this.resultIndex" :key="index" :post=post />
+                        <appCardMain v-for="post, index in this.resultIndex" :key="index" :post=post />
                     </div>
                 </div>
             </div>
