@@ -4,6 +4,7 @@ import appMain from './pages/appMain.vue';
 import appIndex from './pages/appIndex.vue';
 import appCategories from './pages/appCategories.vue';
 import appTags from './pages/appTags.vue';
+import appCreate from './pages/appCreate.vue'
 
 
 const router = createRouter({
@@ -28,6 +29,11 @@ const router = createRouter({
             path: '/tags',
             name: 'tags',
             component: appTags
+        },
+        {
+            path: '/create',
+            name: 'create',
+            component: appCreate
         },
     ]
 })
