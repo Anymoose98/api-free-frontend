@@ -44,7 +44,9 @@ export default {
             <div class="card-body">
                 <h5 class="card-title">{{ TagliaTitolo(post.title) }}</h5>
                 <p class="card-text">{{ TagliaTesto(post.content) }}</p>
-                <a href="#" class="bottone px-2">Scopri di più</a>
+                <div class="text-center">
+                    <a href="#" class="bottone px-2">Scopri di più</a>
+                </div>
             </div>
         </div>
     </div>
@@ -57,8 +59,9 @@ strong {
 }
 
 img {
-    height: 100%;
+    height: 200px;
     width: 100%;
+    object-fit: cover; 
 }
 
 a {

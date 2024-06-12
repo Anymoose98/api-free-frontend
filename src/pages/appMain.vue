@@ -54,7 +54,10 @@ export default {
                             <h4> {{ this.resultIndex[1].title }}</h4>
                         </a>
                         <p> {{ this.resultIndex[1].content }}</p>
+                    
                     </div>
+
+
                     <div class="col-6">
                         <appCardMain v-for="post, index in this.resultIndex" :key="index" :post=post />
                     </div>

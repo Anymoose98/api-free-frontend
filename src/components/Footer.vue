@@ -31,8 +31,7 @@ export default {
                 </div>
                 <div class="col-4">
                     <h2><strong>Collabora con noi</strong></h2>
-                    <h5>Manda il tuo curriculum a</h5>
-                    <h5><strong>iltuocv@ilblog.it</strong></h5>
+                    <h2><router-link :to="{ name: 'create' }">Crea il tuo post</router-link></h2>
                 </div>
             </div>
         </div>
@@ -53,5 +52,17 @@ ul {
   list-style: none; 
   padding: 0; 
   margin: 0; 
+}
+
+h2 {
+  color: white;
+}
+h2:hover{
+  transform: scale(1.2);
+}
+
+a{
+  color:white;
+  text-decoration: none;
 }
 </style>
